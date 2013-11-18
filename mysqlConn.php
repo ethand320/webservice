@@ -54,7 +54,7 @@ echo 'passed selectdb';
 	function closeConn(){
 		
 	mysql_close($this->conn);
-   
+   }
     
 }
 
