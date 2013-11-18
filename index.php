@@ -123,6 +123,10 @@ if(strcasecmp($_GET['method'],'newbar') == 0){
 	
 	
 	$response['data'] = $connection->getBar(1);
+	
+	$connection->closeConn();
+	
+	
  }
  
 // --- Step 4: Deliver Response

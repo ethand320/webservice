@@ -50,6 +50,10 @@ echo 'passed selectdb';
   //              echo $array[0];
                 
     }
+	
+	function closeConn(){
+		
+	mysql_close($this->conn);
    
     
 }
