@@ -118,10 +118,12 @@ if( strcasecmp($_GET['method'],'hello') == 0){
 if(strcasecmp($_GET['method'],'newbar') == 0){
 	$response['code'] = 1;
 	$response['status']= $api_response_code[ $response['code'] ]['HTTP Response'];
+	
 	$connection = new mysqlConn;
 	
 	
 	$response['data'] = $connection->getBar(1);
+ }
  
 // --- Step 4: Deliver Response
  
