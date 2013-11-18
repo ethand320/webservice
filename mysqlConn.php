@@ -26,10 +26,10 @@ private $db_name = 'bar_app_db';
 	mysql_select_db("bar_app_db");
 echo 'passed selectdb';
 
-   	$result =  mysql_query('SELECT * FROM Bar WHERE BarIndex=1');
+   //	$result =  mysql_query('SELECT * FROM Bar WHERE BarIndex=1');
 	
-	 $array = mysql_fetch_array($result);
-                echo $array[0];
+	 //$array = mysql_fetch_array($result);
+        //        echo $array[0];
                 
 
 	echo 'finished?';
@@ -40,10 +40,12 @@ echo 'passed selectdb';
 	echo 'get bar called';
         
         //select whole row based on the index
-   	$result =  $mysql_query( "SELECT * FROM Bar");
-
-	echo 'didnt work';
-
+   	  	$result =  mysql_query('SELECT * FROM Bar WHERE BarIndex=1');
+	
+	 $array = mysql_fetch_array($result);
+                echo $array[0];
+				return $array[0];
+				
 //	 $array =$mysqli_fetch_array($result);
   //              echo $array[0];
                 

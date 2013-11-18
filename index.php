@@ -15,11 +15,6 @@ echo 'its runnignl';
  
     Output: A formatted HTTP response
  
-    Author: Mark Roland
- 
-    History:
-        11/13/2012 - Created
- 
 */
  
 // --- Step 1: Initialize variables and functions
@@ -119,12 +114,21 @@ if( strcasecmp($_GET['method'],'hello') == 0){
     $response['data'] = 'Hello World';  
 }
  
+ 
+if(strcasecmp($_GET['method'],'newbar') == 0){
+	$response['code'] = 1;
+	$response['status']= $api_response_code[ $response['code'] ]['HTTP Response'];
+	$connection = new mysqlConn;
+	
+	
+	$response['data'] = $connection->getBar(1);
+ 
 // --- Step 4: Deliver Response
  
 // Return Response to browser
-//deliver_response($_GET['format'], $response);
+ deliver_response($_GET['format'], $response);
 
-$ethan = new mysqlConn;
- $ethan->getBar(1);
+//$ethan = new mysqlConn;
+ //$ethan->getBar(1);
  
 ?>
