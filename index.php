@@ -43,7 +43,7 @@ function deliver_response($format, $api_response){
  
         // Set HTTP Response Content Type
         header('Content-Type: application/json; charset=utf-8');
- 		echo 'before json convert <br>' ;
+ 		//echo 'before json convert <br>' ;
  		
  		
         // Format data into a JSON response
