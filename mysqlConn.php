@@ -18,7 +18,7 @@ private $db_name = 'bar_app_db';
 
 
     public  function mysqlConn(){
-    	echo 'called';
+    	//echo 'called';
     
       //  $conn = mysql_connect($hostname, $username, $password);
         $conn = mysql_connect("216.231.132.54", "bar", "drower4");
@@ -37,7 +37,7 @@ private $db_name = 'bar_app_db';
    }
     
     function getBar($barIndex){
-	echo 'get bar called';
+	//echo 'get bar called';
         
         //select whole row based on the index
    	  	$result =  mysql_query('SELECT * FROM Bar WHERE BarIndex=2');

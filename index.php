@@ -71,7 +71,7 @@ function deliver_response($format, $api_response){
         header('Content-Type: text/html; charset=utf-8');
  
         // Deliver formatted data
-        echo $api_response['data'];
+      //  echo $api_response['data'];
  
     }
  
