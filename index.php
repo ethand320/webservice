@@ -1,7 +1,6 @@
 <?php
 include 'mysqlConn.php';
 
-echo 'its runnignl';
 
 /*
     API Demo
