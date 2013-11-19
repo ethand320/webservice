@@ -131,7 +131,7 @@ if(strcasecmp($_GET['method'],'newbar') == 0){
 // --- Step 4: Deliver Response
  
 // Return Response to browser
- deliver_response($_GET['format'], $response);
+ deliver_response($_GET['format'], $response['data']);
 
 //$ethan = new mysqlConn;
  //$ethan->getBar(1);

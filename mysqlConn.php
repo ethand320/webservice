@@ -24,7 +24,7 @@ private $db_name = 'bar_app_db';
         $conn = mysql_connect("216.231.132.54", "bar", "drower4");
       if (!$conn) die ('Could not connect to database:'   . mysql_errno());    
 	mysql_select_db("bar_app_db");
-echo 'passed selectdb';
+//echo 'passed selectdb';
 
    //	$result =  mysql_query('SELECT * FROM Bar WHERE BarIndex=1');
 	
@@ -32,7 +32,7 @@ echo 'passed selectdb';
         //        echo $array[0];
                 
 
-	echo 'finished?';
+	
         
    }
     
@@ -40,11 +40,11 @@ echo 'passed selectdb';
 	echo 'get bar called';
         
         //select whole row based on the index
-   	  	$result =  mysql_query('SELECT * FROM Bar WHERE BarIndex=1');
+   	  	$result =  mysql_query('SELECT * FROM Bar WHERE BarIndex=2');
 	
 	 $array = mysql_fetch_array($result);
-                echo $array[0];
-				return $array[0];
+                //echo $array[0];
+				return $array;
 				
 //	 $array =$mysqli_fetch_array($result);
   //              echo $array[0];
