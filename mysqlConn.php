@@ -44,6 +44,11 @@ private $db_name = 'bar_app_db';
 	
 	 $array = mysql_fetch_array($result);
                 //echo $array[0];
+				
+	echo $array;
+	echo '</br> new line space </br>';
+	
+				
 				return $array;
 				
 //	 $array =$mysqli_fetch_array($result);
