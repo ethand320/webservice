@@ -124,7 +124,7 @@ if(strcasecmp($_GET['method'],'newbar') == 0){
 	
 	
 	//$response['data']
-	$arrayDB = connection->getBar(1);
+	$arrayDB = $connection->getBar(1);
 	
 	$connection->closeConn();
 	
