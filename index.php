@@ -121,7 +121,8 @@ if(strcasecmp($_GET['method'],'newbar') == 0){
 	$connection = new mysqlConn;
 	
 	
-	$response['data'] = $connection->getBar(1);
+	//$response['data']
+	$arrayDB = connection->getBar(1);
 	
 	$connection->closeConn();
 	
@@ -131,7 +132,7 @@ if(strcasecmp($_GET['method'],'newbar') == 0){
 // --- Step 4: Deliver Response
  
 // Return Response to browser
- deliver_response($_GET['format'], $response['data']);
+ deliver_response($_GET['format'], $arrayDB);
 
 //$ethan = new mysqlConn;
  //$ethan->getBar(1);
