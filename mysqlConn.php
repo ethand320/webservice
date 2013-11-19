@@ -50,7 +50,7 @@ private $db_name = 'bar_app_db';
     $barDic['Name'] = $array[0];
     $barDic['Style'] = $array[2];
     $barDic['Description'] = $array[3];
-   // $barDic['Ranking'] = $array[4];		
+    $barDic['Ranking'] = $array[4];		
     //$barDic['BarIndex'] = $array[5];	
 	//echo 'finished adding array';
 	
