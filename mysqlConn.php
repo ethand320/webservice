@@ -43,13 +43,16 @@ private $db_name = 'bar_app_db';
    	  	$result =  mysql_query('SELECT * FROM Bar WHERE BarIndex=2');
 	
 	 $array = mysql_fetch_array($result);
+    echo 'before array alloc ';
+    
     
     $barDic['Location'] = $array[1];
     $barDic['Name'] = $array[0];
     $barDic['Style'] = $array[2];
     $barDic['Description'] = $array[3];
-    $barDic['Ranking'] = $array[4];		
-     $barDic['BarIndex'] = $array[5];	
+   // $barDic['Ranking'] = $array[4];		
+    //$barDic['BarIndex'] = $array[5];	
+	echo 'finished adding array';
 	
 //	echo '</br> new line space </br>';
 	
