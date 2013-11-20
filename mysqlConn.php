@@ -38,9 +38,13 @@ private $db_name = 'bar_app_db';
     
     function getBar($barIndex){
 	//echo 'get bar called';
+        $indexer = rand(1,6);
         
-        //select whole row based on the index
-   	  	$result =  mysql_query('SELECT * FROM Bar WHERE BarIndex=2');
+                //select whole row based on the index
+        $query = 'SELECT * FROM Bar WHERE BarIndex='. $indexer;
+          
+   	  	//$result =  mysql_query('SELECT * FROM Bar WHERE BarIndex=2');
+   	  	$result =  mysql_query($query);
 	
 	 $array = mysql_fetch_array($result);
    // echo 'before array alloc ';
