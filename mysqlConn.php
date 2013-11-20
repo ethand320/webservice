@@ -55,7 +55,9 @@ private $db_name = 'bar_app_db';
     $barDic['Style'] = $array[2];
     $barDic['Description'] = $array[3];
     $barDic['Ranking'] = $array[4];
-    //index 5 is bar index value
+    $barDic['BarIndex'] = $array[5];
+    
+       //index 5 is bar index value
     $barDic['ImageUrl'] = $array[6];
     
         
