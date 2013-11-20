@@ -38,7 +38,7 @@ private $db_name = 'bar_app_db';
     
     function getBar($barIndex){
 	//echo 'get bar called';
-        $indexer = rand(1,6);
+        $indexer = rand(2,7);
         
                 //select whole row based on the index
         $query = 'SELECT * FROM Bar WHERE BarIndex='. $indexer;
